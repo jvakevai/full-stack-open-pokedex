@@ -2,4 +2,4 @@
 
 echo "Build script"
 
-npm run build && npm start-prod
+npm run build && npm run start-prod
