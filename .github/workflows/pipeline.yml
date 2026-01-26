@@ -25,4 +25,7 @@ jobs:
         run: npm run test
       - name: Playwright tests
         run: npm run e2e-test
+      - name: Trigger deployment
+        run: curl https://api.render.com/deploy/srv-${{ sercret.RENDER_SERVICE_ID }}?key=${{sercrets.RENDER_API_KEY}}
+
 
